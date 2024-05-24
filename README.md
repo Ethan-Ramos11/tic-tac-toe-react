@@ -1,6 +1,12 @@
 # React Tic-Tac-Toe Game
 
-Welcome to the React Tic-Tac-Toe game repository! This project is a simple yet fun implementation of the classic Tic-Tac-Toe game built using React.js. It features a clean, interactive user interface and is perfect for those looking to understand the basics of React application development.
+Welcome to the React Tic-Tac-Toe game repository! This project is a simple yet fun implementation of the classic Tic-Tac-Toe game built using React.js and Vite.
+
+## Live Demo
+
+**Experience the game**: [Play Tic-Tac-Toe](https://ethan-ramos11.github.io/tic-tac-toe-react/)
+
+This version of the game is hosted using GitHub Pages, allowing you to play the game directly in your browser without any installation.
 
 ## Features
 
@@ -13,34 +19,69 @@ Welcome to the React Tic-Tac-Toe game repository! This project is a simple yet f
 ## Technologies Used
 
 - React.js
+- Vite
 - CSS
 - HTML
 
 ## Installation
 
-To get this project up and running on your local machine, follow these simple steps:
+Follow these steps to get the game running on your local machine:
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/Ethan-Ramos11/tic-tac-toe-react.git
    ```
+
 2. **Navigate to the project directory**:
+
    ```bash
    cd tic-tac-toe-react
    ```
+
 3. **Install the required packages**:
+
    ```bash
    npm install
    ```
+
 4. **Start the development server**:
    ```bash
-   npm start dev
+   npm run dev
    ```
    This will launch the Tic-Tac-Toe game in your default web browser.
 
-## Usage
+## Deployment
 
-Play the game by clicking on the cells to make your move. Use the "Reset Game" button to clear the board and start a new game.
+To deploy the project to GitHub Pages, follow these steps:
+
+1. **Update `vite.config.js`**:
+   Ensure the `base` property is set to the repository name.
+
+   ```javascript
+   import { defineConfig } from "vite";
+   import react from "@vitejs/plugin-react";
+
+   export default defineConfig({
+     base: "/tic-tac-toe-react/",
+     plugins: [react()],
+   });
+   ```
+
+2. **Build the project**:
+
+   ```bash
+   npm run build
+   ```
+
+3. **Deploy to GitHub Pages**:
+
+   ```bash
+   npm run deploy
+   ```
+
+4. **Access the live demo**:
+   Visit [https://ethan-ramos11.github.io/tic-tac-toe-react/](https://ethan-ramos11.github.io/tic-tac-toe-react/) to see your deployed application.
 
 ## License
 
