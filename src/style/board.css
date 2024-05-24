@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+#board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  max-width: 300px;
+  margin: auto;
+}
+
+.cell {
+  display: flex;
+  font-family: "Press Start 2P";
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  height: 100px;
+  width: 100px;
+  border: 1px solid #000;
+  cursor: pointer;
+  user-select: none;
+  color: black;
+}
+
+.cell-x {
+  color: #e45454;
+}
+
+.cell-o {
+  color: #4f9bb6;
+}
+
+.cell-x:hover {
+  border: 3px solid #e45454;
+}
+
+.cell-o:hover {
+  border: 3px solid #4f9bb6;
+}
+
+.cell.clicked {
+  background-color: #654b4b;
+}
+.win-strike {
+  position: relative;
+  animation: strike-through 0.5s forwards;
+}
+
+@keyframes strike-through {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: yellow; /* Change color to signify a win */
+  }
+}
