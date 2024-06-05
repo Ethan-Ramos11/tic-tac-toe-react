@@ -51,38 +51,6 @@ Follow these steps to get the game running on your local machine:
    ```
    This will launch the Tic-Tac-Toe game in your default web browser.
 
-## Deployment
-
-To deploy the project to GitHub Pages, follow these steps:
-
-1. **Update `vite.config.js`**:
-   Ensure the `base` property is set to the repository name.
-
-   ```javascript
-   import { defineConfig } from "vite";
-   import react from "@vitejs/plugin-react";
-
-   export default defineConfig({
-     base: "/tic-tac-toe-react/",
-     plugins: [react()],
-   });
-   ```
-
-2. **Build the project**:
-
-   ```bash
-   npm run build
-   ```
-
-3. **Deploy to GitHub Pages**:
-
-   ```bash
-   npm run deploy
-   ```
-
-4. **Access the live demo**:
-   Visit [https://ethan-ramos11.github.io/tic-tac-toe-react/](https://ethan-ramos11.github.io/tic-tac-toe-react/) to see your deployed application.
-
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
